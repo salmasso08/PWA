@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <base href="/pwa/"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Seu bloco de notas" />
@@ -9,10 +8,32 @@
     <title>PWA</title>
     <link rel="stylesheet" href="css/style.css">    
     <link rel="stylesheet" href="css/colors.css">
-    <link rel="manifest" href="manifest.json">    
+    <link rel="manifest" href="manifest.json">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+
+
+    <script>
+    // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyClB16pd4hQWWra9mNu5zVBX6DO7T2exuQ",
+            authDomain: "pwa-notes-08.firebaseapp.com",
+            databaseURL: "https://pwa-notes-08.firebaseio.com",
+            projectId: "pwa-notes-08",
+            storageBucket: "pwa-notes-08.appspot.com",
+            messagingSenderId: "366960283883",
+            appId: "1:366960283883:web:9dd3fc00833c3a6a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    
     <script src="js/object.observe.polyfill.js" ></script>
     <script src="js/array.obeserve.polyfill.js" ></script>
     <script src="js/script.js" ></script>
+    <script src="js/push.js" ></script>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
